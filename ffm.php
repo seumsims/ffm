@@ -9,3 +9,8 @@ Author URI: https://github.com/seumsims/
 License: MIT License
 License URI: https://www.mit.edu/~amini/LICENSE.md
 */
+add_action('wp_head', function() {
+    if ( !is_user_logged_in() ) {
+    _e("SALAMA");
+}
+});
